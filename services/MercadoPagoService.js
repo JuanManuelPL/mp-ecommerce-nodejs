@@ -16,7 +16,7 @@ const createPreference = item => {
                 {
                     id: '1234',
                     title: item.title,
-                    description: "Dispositivo móvil de Tienda e-commerce",
+                    description: "“Dispositivo móvil de Tienda e-commerce”",
                     quantity: 1,
                     picture_url: item.img,
                     unit_price: Number(item.price)
@@ -45,7 +45,7 @@ const createPreference = item => {
             payment_methods: {
                 excluded_payment_methods: [
                     {
-                        id: 'Amex'
+                        id: 'amex'
                     }
                 ],
                 excluded_payment_types: [
@@ -53,9 +53,9 @@ const createPreference = item => {
                         id: 'atm'
                     }
                 ],
-                installments: 12
+                installments: 6
             },
-            notification_url: isSandbox ? LOCALHOST+'/statusCallback' : PRODUCTION+'/statusCallback',
+            notification_url: 'https://e7fe-187-151-143-70.ngrok.io',
             external_reference: 'jmpl0507@gmail.com',
         };
 
