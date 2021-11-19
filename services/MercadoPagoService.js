@@ -55,7 +55,7 @@ const createPreference = item => {
                 ],
                 installments: 12
             },
-            notification_url: !isSandbox ? LOCALHOST+'/statusCallback' : PRODUCTION+'/statusCallback',
+            notification_url: 'https://0cde-187-151-143-70.ngrok.io',//!isSandbox ? LOCALHOST+'/statusCallback' : PRODUCTION+'/statusCallback',
             external_reference: 'jmpl0507@gmail.com',
         };
 
