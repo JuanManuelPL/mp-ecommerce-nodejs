@@ -25,7 +25,7 @@ const createPreference = item => {
             payer: {
                 name: 'Lalo',
                 surname: 'Landa',
-                email: !isSandbox ? 'test_user_74638846@testuser.com' : 'test_user_81131286@testuser.com',
+                email: isSandbox ? 'test_user_74638846@testuser.com' : 'test_user_81131286@testuser.com',
                 phone: {
                     area_code: '11',
                     number: 22223333
@@ -55,7 +55,7 @@ const createPreference = item => {
                 ],
                 installments: 12
             },
-            notification_url: 'https://0cde-187-151-143-70.ngrok.io',//!isSandbox ? LOCALHOST+'/statusCallback' : PRODUCTION+'/statusCallback',
+            notification_url: isSandbox ? LOCALHOST+'/statusCallback' : PRODUCTION+'/statusCallback',
             external_reference: 'jmpl0507@gmail.com',
         };
 
